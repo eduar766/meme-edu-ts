@@ -5,11 +5,8 @@ import axios from 'axios';
 
 dotenv.config(); // Cargar variables de entorno desde .env
 
-console.log(dotenv.config())
-
 // Configuración del bot de Discord
 const TOKEN = process.env.DS_TOKEN;
-console.log('TOKEN1', TOKEN)
 const CHANNEL_ID = process.env.DS_CHANNEL_ID;
 const INTERVALO = Number(process.env.INTERVALO_PUBLICACION) || 10; // Intervalo en minutos
 //const SUBREDDITS = ['gamingmemes', 'dankmemes', 'ProgrammerHumor', 'techhumor'];
@@ -171,5 +168,4 @@ client.on('messageCreate', async (message) => {
 });
 
 // Iniciar el bot
-console.log('TOKEN2', TOKEN)
 client.login(TOKEN);
