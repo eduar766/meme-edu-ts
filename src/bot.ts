@@ -40,7 +40,7 @@ async function getRedditAccessToken() {
         return response.data.access_token;
     } catch (error) {
         console.error("❌ Error obteniendo el token de acceso de Reddit:");
-        return 'eyJhbGciOiJSUzI1NiIsImtpZCI6IlNIQTI1NjpzS3dsMnlsV0VtMjVmcXhwTU40cWY4MXE2OWFFdWFyMnpLMUdhVGxjdWNZIiwidHlwIjoiSldUIn0.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzQyMjI5NzAwLjU3MjEwOSwiaWF0IjoxNzQyMTQzMzAwLjU3MjEwOSwianRpIjoiY3BOdE9MMWxwMkd5dGtOc05PUXh4WXpMQkJCem1nIiwiY2lkIjoiTjlTM1VXVXBYZkZKZ2FPT25WeXR5dyIsImxpZCI6InQyXzh2bnJzeXJrIiwiYWlkIjoidDJfOHZucnN5cmsiLCJsY2EiOjE2MDUzMDQ1NDcwMDAsInNjcCI6ImVKeUtWdEpTaWdVRUFBRF9fd056QVNjIiwiZmxvIjo5fQ.TedbT8v24AaDuODMCRpdRPWicSaPGCEiwOHpBRcp5ws_FW_xMqlXJkODChWmdfRDkeMX4fTyBBRi8dZO9a4TCR5XPK9yfp8URluFlPKdDgBN1BFwFgL5xJnlIsqvclZTBh6-2EnUxhfjcMLukkyWpVzhyOoVWgnvy4kPH15tDN8RT-sQ2EG5doMbrQEgbTLO7lYvsoVrzim2T3is6pDz-EqNmJFbjhK1x_wzDoKg7Sr_eMQH9uaP-EVp227jw1Zr9z6AfASDTi6cVKA426CyN3j87SHUbduttZdnMdhZ8gTmkp747KfByD0QkvoEA6gua6vz98sgVJv0Bo_z5ygTGg'
+        return process.env.REDDIT_REFRESH_TOKEN;
     }
 }
 
